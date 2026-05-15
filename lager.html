@@ -3,74 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Lagersystem | Gambit Website</title>
-
+  <title>Lagersystem | Gambit</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header class="header">
-      <nav class="navbar">
-        <a class="logo" href="index.html">Gambit</a>
+  <div class="site-wrapper">
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <img src="assets/gambit-logo.png" alt="Gambit Logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Gambit</span>
+            <span class="brand-subtitle">Website & Management</span>
+          </div>
+        </a>
 
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
 
-        <div class="nav-links" id="navLinks">
+        <nav class="nav-links" id="navLinks">
           <a href="index.html">Start</a>
-          <a class="active" href="lager.html">Lagersystem</a>
+          <a href="lager.html" class="active">Lagersystem</a>
           <a href="ueber-uns.html">Über uns</a>
           <a href="kontakt.html">Kontakt</a>
           <a href="impressum.html">Impressum</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main class="content">
-      <section class="page-title">
-        <span class="badge">Planung</span>
-        <h1>Lagersystem</h1>
-        <p class="lead">
-          Hier entsteht später der Bereich für dein digitales Lagersystem.
-          Aktuell ist diese Seite als Konzept- und Übersichtsseite vorbereitet.
-        </p>
+    <main>
+      <section class="sub-hero container">
+        <div class="card sub-hero-card">
+          <span class="badge">Gambit Lagerverwaltung</span>
+
+          <h1>Lagersystem</h1>
+
+          <p class="hero-text">
+            Diese Seite ist vorbereitet als zukünftiger Bereich für Bestand,
+            Einlagern, Auslagern, Waffen mit Seriennummern, Mindestbestand,
+            Protokolle und Benutzerrechte.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#module" class="btn btn-green">Module ansehen</a>
+            <a href="#zugriff" class="btn btn-gold">Zugriffskonzept</a>
+          </div>
+        </div>
+
+        <div class="card sub-status-card">
+          <h2>Systemplanung</h2>
+
+          <div class="mini-status">
+            <div>
+              <strong>Status</strong>
+              <span>Frontend vorbereitet</span>
+            </div>
+            <div>
+              <strong>Datenbank</strong>
+              <span>später extern möglich</span>
+            </div>
+            <div>
+              <strong>Zugriff</strong>
+              <span>später nur mit Account</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="dashboard-grid">
-        <article class="info-card">
-          <h3>Bestand</h3>
-          <p>Übersicht über Artikel, Kategorien, Mengen und Seriennummern.</p>
-        </article>
+      <section class="module-section container" id="module">
+        <div class="section-heading">
+          <span class="badge">Module</span>
+          <h2>Lagerbereiche</h2>
+          <p>
+            Diese Bereiche können wir später Stück für Stück mit echten Funktionen ausbauen.
+          </p>
+        </div>
 
-        <article class="info-card">
-          <h3>Einlagern</h3>
-          <p>Neue Artikel oder Waffen mit Seriennummer ins System aufnehmen.</p>
-        </article>
+        <div class="module-grid">
+          <article class="module-card">
+            <div class="feature-icon">📦</div>
+            <h3>Bestand</h3>
+            <p>
+              Übersicht über alle Artikel, Kategorien, Mengen, Mindestbestände und Statusmeldungen.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
 
-        <article class="info-card">
-          <h3>Auslagern</h3>
-          <p>Bestände reduzieren, Personen zuweisen und Aktionen protokollieren.</p>
-        </article>
+          <article class="module-card">
+            <div class="feature-icon">📥</div>
+            <h3>Einlagern</h3>
+            <p>
+              Neue Mengenartikel oder Waffen mit Seriennummern ins Lager aufnehmen.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
 
-        <article class="info-card">
-          <h3>Mindestbestand</h3>
-          <p>Artikel markieren, die nachgekauft werden müssen.</p>
-        </article>
+          <article class="module-card">
+            <div class="feature-icon">📤</div>
+            <h3>Auslagern</h3>
+            <p>
+              Artikel aus dem Lager buchen, Personen zuweisen und Bewegungen speichern.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
 
-        <article class="info-card">
-          <h3>Protokoll</h3>
-          <p>Alle Bewegungen und Änderungen später nachvollziehbar speichern.</p>
-        </article>
+          <article class="module-card">
+            <div class="feature-icon">🔫</div>
+            <h3>Waffenverwaltung</h3>
+            <p>
+              Verwaltung von Waffen, Seriennummern, Status und Zuordnung zu Personen.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
 
-        <article class="info-card">
-          <h3>Benutzerrechte</h3>
-          <p>Später nur mit Login und passenden Berechtigungen nutzbar.</p>
-        </article>
+          <article class="module-card">
+            <div class="feature-icon">⚠️</div>
+            <h3>Mindestbestand</h3>
+            <p>
+              Warnung, wenn Artikel nachgekauft werden müssen.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
+
+          <article class="module-card">
+            <div class="feature-icon">📜</div>
+            <h3>Protokoll</h3>
+            <p>
+              Nachvollziehbare Historie für Einlagerungen, Auslagerungen und Änderungen.
+            </p>
+            <span class="module-tag">geplant</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="access-section container" id="zugriff">
+        <div class="card access-card">
+          <div>
+            <span class="badge">Sicherheit</span>
+            <h2>Zugriff nur mit Benutzerkonto</h2>
+            <p>
+              GitHub Pages alleine kann keine echten Benutzerkonten verwalten.
+              Für einen echten geschützten Lagerbereich brauchen wir später ein Backend
+              oder einen externen Dienst wie Supabase, Firebase oder eine eigene API.
+            </p>
+          </div>
+
+          <div class="access-list">
+            <div class="access-item">
+              <strong>Admin</strong>
+              <span>Benutzer, Rechte und alle Module verwalten</span>
+            </div>
+
+            <div class="access-item">
+              <strong>Lager</strong>
+              <span>Bestand sehen, einlagern und auslagern</span>
+            </div>
+
+            <div class="access-item">
+              <strong>Lesen</strong>
+              <span>Bestand ansehen, aber nichts verändern</span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      © 2026 Gambit Website — Lagersystem
+      <div class="container">© 2026 Gambit — Lagersystem</div>
     </footer>
   </div>
 
