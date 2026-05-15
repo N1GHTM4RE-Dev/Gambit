@@ -12,18 +12,21 @@
   <div class="page">
     <header class="header">
       <nav class="navbar">
-        <div class="logo">Gambit</div>
+        <a class="logo" href="index.html">Gambit</a>
 
-        <div class="nav-links">
-          <a href="#start">Start</a>
-          <a href="#system">System</a>
-          <a href="#module">Module</a>
-          <a href="#kontakt">Kontakt</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="active" href="index.html">Start</a>
+          <a href="lager.html">Lagersystem</a>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
         </div>
       </nav>
     </header>
 
-    <main id="start">
+    <main>
       <section class="hero">
         <div class="hero-card">
           <span class="badge">Kostenfreie GitHub Pages Website</span>
@@ -32,19 +35,19 @@
 
           <p class="lead">
             Willkommen auf deiner neuen Website. Diese Seite läuft kostenlos über GitHub Pages
-            und ist die Grundlage für dein späteres Web-Projekt.
+            und bildet die Grundlage für dein späteres Web-Projekt.
           </p>
 
           <div class="actions">
-            <button class="button green" onclick="showMessage()">Status prüfen</button>
-            <a class="button gold" href="#module">Module ansehen</a>
+            <a class="button green" href="lager.html">Lagersystem ansehen</a>
+            <a class="button gold" href="kontakt.html">Kontakt öffnen</a>
           </div>
         </div>
 
-        <aside class="panel-card" id="system">
+        <aside class="panel-card">
           <h2>Systemstatus</h2>
 
-          <div class="status-list" id="messageBox">
+          <div class="status-list">
             <div class="status-item">
               <strong>GitHub Pages</strong>
               Website ist eingerichtet.
@@ -57,38 +60,37 @@
 
             <div class="status-item">
               <strong>Nächster Schritt</strong>
-              Seitenstruktur und Design erweitern.
+              Design und Inhalte weiter ausbauen.
             </div>
           </div>
         </aside>
       </section>
 
-      <section class="sections" id="module">
+      <section class="sections">
         <article class="info-card">
           <h3>Website</h3>
           <p>
-            Startseite, Informationen, Kontaktbereich und später weitere Unterseiten.
+            Eine saubere Startseite mit Navigation, Unterseiten und später weiteren Funktionen.
           </p>
         </article>
 
         <article class="info-card">
           <h3>Lagersystem</h3>
           <p>
-            Später können wir hier dein Lagerkonzept planen und als Web-App anbinden.
+            Dein Lagersystem kann später als eigener Bereich geplant und Schritt für Schritt angebunden werden.
           </p>
         </article>
 
         <article class="info-card">
           <h3>Benutzerbereich</h3>
           <p>
-            Ein Login-System braucht später ein Backend oder einen externen Dienst.
-            GitHub Pages allein speichert keine Benutzerkonten.
+            Für echte Benutzerkonten brauchen wir später ein Backend oder einen externen Login-Dienst.
           </p>
         </article>
       </section>
     </main>
 
-    <footer class="footer" id="kontakt">
+    <footer class="footer">
       © 2026 Gambit Website — Erstellt mit GitHub Pages
     </footer>
   </div>
