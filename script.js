@@ -1,12 +1,7 @@
-function showMessage() {
-  const box = document.getElementById("messageBox");
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
 
-  if (!box) return;
+  if (!nav) return;
 
-  box.innerHTML = `
-    <div class="status-item">
-      <strong>Website bereit</strong>
-      Deine GitHub Page ist aktiv. Jetzt können wir Schritt für Schritt Seiten, Design und später Funktionen einbauen.
-    </div>
-  `;
+  nav.classList.toggle("open");
 }
