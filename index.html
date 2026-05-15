@@ -3,96 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Gambit Website</title>
-
+  <title>Gambit</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header class="header">
-      <nav class="navbar">
-        <a class="logo" href="index.html">Gambit</a>
+  <div class="site-wrapper">
 
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <img src="assets/gambit-logo.png" alt="Gambit Logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Gambit</span>
+            <span class="brand-subtitle">Website & Management</span>
+          </div>
+        </a>
 
-        <div class="nav-links" id="navLinks">
-          <a class="active" href="index.html">Start</a>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Start</a>
           <a href="lager.html">Lagersystem</a>
           <a href="ueber-uns.html">Über uns</a>
           <a href="kontakt.html">Kontakt</a>
           <a href="impressum.html">Impressum</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-card">
-          <span class="badge">Kostenfreie GitHub Pages Website</span>
+      <section class="hero container">
+        <div class="hero-left card">
+          <span class="badge">GitHub Pages • Kostenlos • Modern</span>
 
-          <h1>Gambit Website</h1>
+          <h1>Willkommen bei Gambit</h1>
 
-          <p class="lead">
-            Willkommen auf deiner neuen Website. Diese Seite läuft kostenlos über GitHub Pages
-            und bildet die Grundlage für dein späteres Web-Projekt.
+          <p class="hero-text">
+            Diese Website ist die neue Grundlage für dein Gambit-Projekt.
+            Das Design ist jetzt auf dein echtes Logo abgestimmt und kann später
+            um Lagersystem, Login, Benutzerbereiche und weitere Funktionen erweitert werden.
           </p>
 
-          <div class="actions">
-            <a class="button green" href="lager.html">Lagersystem ansehen</a>
-            <a class="button gold" href="kontakt.html">Kontakt öffnen</a>
+          <div class="hero-buttons">
+            <a href="lager.html" class="btn btn-green">Zum Lagersystem</a>
+            <a href="ueber-uns.html" class="btn btn-gold">Mehr erfahren</a>
           </div>
         </div>
 
-        <aside class="panel-card">
-          <h2>Systemstatus</h2>
-
-          <div class="status-list">
-            <div class="status-item">
-              <strong>GitHub Pages</strong>
-              Website ist eingerichtet.
-            </div>
-
-            <div class="status-item">
-              <strong>Frontend</strong>
-              HTML, CSS und JavaScript sind vorbereitet.
-            </div>
-
-            <div class="status-item">
-              <strong>Nächster Schritt</strong>
-              Design und Inhalte weiter ausbauen.
-            </div>
-          </div>
-        </aside>
+        <div class="hero-right card logo-card">
+          <img src="assets/gambit-logo.png" alt="Gambit Logo groß" class="hero-logo" />
+          <h2>Dein offizieller Auftritt</h2>
+          <p>
+            Das Logo ist jetzt direkt im Design eingebunden und bildet die Basis
+            für deinen kompletten Website-Look.
+          </p>
+        </div>
       </section>
 
-      <section class="sections">
-        <article class="info-card">
-          <h3>Website</h3>
-          <p>
-            Eine saubere Startseite mit Navigation, Unterseiten und später weiteren Funktionen.
-          </p>
-        </article>
-
-        <article class="info-card">
+      <section class="features container">
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
           <h3>Lagersystem</h3>
           <p>
-            Dein Lagersystem kann später als eigener Bereich geplant und Schritt für Schritt angebunden werden.
+            Hier kann später dein Lagerbestand, Einlagern, Auslagern,
+            Protokoll und Mindestbestand eingebunden werden.
           </p>
-        </article>
+        </div>
 
-        <article class="info-card">
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
           <h3>Benutzerbereich</h3>
           <p>
-            Für echte Benutzerkonten brauchen wir später ein Backend oder einen externen Login-Dienst.
+            Später können wir Login, Rollen und Rechte ergänzen,
+            damit nur berechtigte Benutzer Zugriff haben.
           </p>
-        </article>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Erweiterbar</h3>
+          <p>
+            Die Website ist so aufgebaut, dass wir später Schritt für Schritt
+            weitere Seiten und Funktionen ergänzen können.
+          </p>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      © 2026 Gambit Website — Erstellt mit GitHub Pages
+      <div class="container">
+        © 2026 Gambit — Erstellt mit GitHub Pages
+      </div>
     </footer>
+
   </div>
 
   <script src="script.js"></script>
